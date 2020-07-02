@@ -4,7 +4,10 @@
 
 import itertools
 from os import path
+from typing import Tuple
 
+import tensorflow as tf
+import trax
 from ml_params.base import BaseTrainer
 from ml_prepare.datasets import datasets2classes
 from ml_prepare.exectors import build_tfds_dataset
@@ -137,5 +140,7 @@ class TraxTrainer(BaseTrainer):
         training_session.run(n_steps=epochs)
         return training_session
 
+
+del path, Tuple, tf, trax, build_tfds_dataset, get_logger
 
 __all__ = ['TraxTrainer']
