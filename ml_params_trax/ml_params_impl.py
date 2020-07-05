@@ -115,7 +115,16 @@ class TraxTrainer(BaseTrainer):
         :param kwargs:
         :return:
         """
-        super(TraxTrainer, self).train(epochs=epochs, *args, **kwargs)
+        super(TraxTrainer, self).train(callbacks=callbacks,
+                                       epochs=epochs,
+                                       loss=loss,
+                                       metrics=metrics,
+                                       metric_emit_freq=metric_emit_freq,
+                                       optimizer=optimizer,
+                                       save_directory=save_directory,
+                                       output_type='infer',
+                                       writer=writer,
+                                       *args, **kwargs)
         assert self.data is not None
         assert self.model is not None
 
