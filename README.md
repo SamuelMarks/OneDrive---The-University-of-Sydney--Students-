@@ -20,9 +20,11 @@ After installing as above, follow usage from https://github.com/SamuelMarks/ml-p
 
 ## Sibling projects
 
-  - https://github.com/SamuelMarks/ml-params-jax
-  - https://github.com/SamuelMarks/ml-params-keras
   - https://github.com/SamuelMarks/ml-params-tensorflow
+  - https://github.com/SamuelMarks/ml-params-keras
+  - https://github.com/SamuelMarks/ml-params-flax
+  - https://github.com/SamuelMarks/ml-params-jax
+  - https://github.com/SamuelMarks/ml-params-pytorch
 
 ## Related projects
 
